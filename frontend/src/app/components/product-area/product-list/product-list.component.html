@@ -1,2 +1,4 @@
-<p>product-list works!</p>
-<button (click)="getAll($event)" >get all</button>
+<!-- <button (click)="getAll($event)" >get all</button> -->
+<div>
+  <app-product-card *ngFor="let prod of products" [product]="prod"></app-product-card>
+</div>

@@ -1,3 +1,4 @@
+import { AddItemToCartComponent } from './components/cart-area/add-item-to-cart/add-item-to-cart.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about-area/about/about.component';
@@ -13,8 +14,9 @@ const routes: Routes = [
 { path:"login", component: LoginComponent },
   { path:"layout", component: LayoutComponent },
   { path:"home", component: HomeComponent },
-  
+
   { path:"products", component: ProductListComponent },
+  { path:"products/add/cart", component: AddItemToCartComponent },
   { path:"register", component: RegisterComponent },
   { path:"products/new", component: AddProductComponent },
   { path:"about", component: AboutComponent },
